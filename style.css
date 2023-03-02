@@ -1,0 +1,257 @@
+:root {
+  --dark-blue1: hsl(217, 28%, 15%);
+  --dark-blue2: hsl(218, 28%, 13%);
+  --dark-blue3: hsl(216, 53%, 9%);
+  --dark-blue4: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --light-red: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--dark-blue1);
+}
+nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  margin-left: 30px;
+}
+nav img {
+  width: 100px;
+}
+/* nav div{
+    flex: 3;
+} */
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  place-items: center;
+}
+
+nav div {
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  margin-left: 330px;
+}
+.section1 {
+  text-align: center;
+  color: var(--white);
+}
+/* .button{
+    font-size: 40px;
+    background-color: var(--cyan);
+    color: var(--white);
+    border-radius: 20px;
+    height: 58px; 
+    border-style: none;
+    text-decoration
+} */
+.button {
+  background-color: var(--blue);
+  font-size: 22px;
+  border-radius: 80px;
+  color: var(--white);
+  margin-left: 110px;
+  padding-left: 50px;
+  margin-right: 110px;
+  padding-right: 50px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.lag {
+  display: flex;
+  max-width: 10px;
+  padding: 100px;
+}
+.word {
+  color: var(--white);
+  padding: 70px;
+  margin-bottom: 100px;
+  margin-top: 1fr 1fr;
+  text-align: justify;
+}
+.section2 {
+  background-color: var(--dark-blue2);
+  padding: 60px 0;
+}
+.inner-section2 {
+  color: var(--white);
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 30px;
+}
+@media (min-width: 765px) {
+  .section1 {
+    background-image: url(./images/bg-curvy-desktop.svg);}
+}
+.inner-section2 {
+  /* text-align: center; */
+  /* padding: 10px 20px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  
+  
+}
+/* .section1 div{
+    color: var(--white);
+    text-align: center;
+    max-width: 500px;
+    ;
+} */
+.section {
+  background-image: url(./images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+/* .inner-section2  {
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+} */
+.a{
+    text-align: center;
+}
+.b{
+    text-align: center;
+}
+.c{
+    text-align: center;
+}
+.d{
+    text-align: center;
+}
+.check{
+    color: var(--white);
+    /* display: 20px; */
+    display: flex;
+
+}
+.ach{
+    color: var(--cyan);
+}
+.checkmate{
+    margin-left: 60px;
+    margin-bottom: 80px;
+    padding-top: 90px;
+}
+.section4{
+  color: var(--white);
+  background-color: var(--dark-blue2);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 60px;
+  position: relative;
+  padding-bottom: 200px;
+  
+}
+.section4-items > div >{
+  width: 100px;
+}
+.section4-items{
+  background-color: var(--dark-blue4);
+  border-radius: 8px;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 2;
+}
+.section4-items > div {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 20px;
+  place-items: middle;
+  padding-top: 40px;
+
+}
+.section4-items img{
+  border-radius: 100px;
+  width: 70px;
+}
+.quotes{
+  width: 50px;
+  position: absolute;
+  top: 0px;
+  left: 52px;
+  z-index: 1;
+}
+
+
+@media ( min-width: 768px){
+  .section4 {
+    flex-direction: row;
+  }
+}
+footer{
+  color: var(--white);
+  background-color: var(--dark-blue3);
+  position: relative;
+  padding-top: 400px;
+}
+.top-part{
+  padding: 20px 40px;
+  width: 70%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--dark-blue1);
+  position: absolute;
+  top: -150px;
+  text-align: center;
+  right: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+.top-part h3, .top-part p{
+  padding-bottom: 20px;
+}
+.top-part input {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.top-part button{
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--cyan);
+}
+.second-log{
+  margin-left: 30px;
+}
+@media screen {
+  .inputandbutton {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+}
+.ta1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+
+}
